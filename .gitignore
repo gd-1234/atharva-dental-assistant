@@ -1,0 +1,109 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.orig
+*.log
+*.tmp
+*.swp
+.env
+.venv
+venv/
+env/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ============================
+# Datasets & Artifacts
+# ============================
+artifacts/
+datasets/training/*
+!datasets/clinic/**
+
+# Keep clinic dataset (source knowledge)
+# Ignore training data (sensitive or large)
+
+# ============================
+# Model Checkpoints / Outputs
+# ============================
+*.ckpt
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.h5
+*.tar.gz
+*.zip
+*.npz
+
+# ============================
+# Jupyter & Dev Artifacts
+# ============================
+.ipynb_checkpoints/
+*.ipynb~
+*.DS_Store
+*.idea/
+.vscode/
+*.code-workspace
+
+# ============================
+# Kubernetes & Deployment Junk
+# ============================
+# Ignore backups or temp yaml files
+k8s/**/*.orig
+k8s/**/*.bak
+k8s/**/*.tmp
+# Keep main manifests
+!k8s/**/*.yaml
+
+# ============================
+# Logs & Results
+# ============================
+logs/
+*.log
+*.out
+*.err
+nohup.out
+results/
+outputs/
+
+# ============================
+# Temporary Scripts & Cache
+# ============================
+tmp/
+.cache/
+.tox/
+pytest_cache/
+__snapshots__/
+.coverage
+coverage.xml
+htmlcov/
+
+# ============================
+# Local Configs & Misc
+# ============================
+*.local
+*.env
+.envrc
+.env.*
+*.cfg
+*.ini
+*.toml
+*.jsonl.backup
+
+# ============================
+# OS / Editor
+# ============================
+.DS_Store
+Thumbs.db
+.swp
+*.bak
+*.tmp
