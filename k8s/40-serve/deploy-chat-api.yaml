@@ -4,7 +4,7 @@ metadata:
   name: atharva-chat-api
   namespace: atharva-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels: { app: atharva-chat-api }
   template:
